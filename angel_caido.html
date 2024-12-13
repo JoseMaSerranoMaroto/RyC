@@ -4,36 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EL ANGEL CAÍDO</title>
+    <!-- Incluye el CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
         .foto-container {
+            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 50vh;
-            background-color: #f0f0f0;
         }
         .texto-container {
-            width: 100%;
-            padding: 20px;
             background-color: #e0e0e0;
-            box-sizing: border-box;
+            padding: 20px;
             text-align: center;
-            position: relative;
-            top: -20px; /* Ajusta este valor para posicionar el texto */
         }
     </style>
 </head>
 <body>
-    <div class="foto-container">
-        <img src="Angel_Caido.jpeg" alt="Foto del personaje del Belén" style="max-width: 100%; height: auto;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 foto-container">
+                <img src="Angel_Caido.jpeg" alt="Foto del personaje del Belén" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 texto-container">
+                <p><strong>EL ANGEL CAÍDO</strong></p>
+                <p>Miguel, enfermero: representa la rebelión, tras ser expulsado del reino de los cielos.</p>
+            </div>
+        </div>
     </div>
-    <div class="texto-container">
-        <p><strong>EL ANGEL CAÍDO</strong></p>
-        <p>Miguel, enfermero: representa la rebelión, tras ser expulsado del reino de los cielos.</p>
-    </div>
+    <!-- Incluye el JS de Bootstrap y sus dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
