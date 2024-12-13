@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS REINAS DULCES</title>
+    <!-- Incluye el CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-image: url('fondo.png'); /* Cambiado a fondo.png */
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-attachment: fixed; /* La imagen de fondo se queda fija al hacer scroll */
         }
         .foto-container {
+            background-color: rgba(240, 240, 240, 0.8); /* Fondo semitransparente para la imagen */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 50vh;
-            background-color: #f0f0f0;
         }
         .texto-container {
-            width: 100%;
+            background-color: rgba(224, 224, 224, 0.8); /* Fondo semitransparente para el texto */
             padding: 20px;
-            background-color: #e0e0e0;
-            box-sizing: border-box;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="foto-container">
-        <img src="tu-foto.jpg" alt="Foto del personaje del Belén" style="max-width: 100%; height: auto;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 foto-container">
+                <img src="REINAS_DULCES.jpeg" alt="Foto del personaje del Belén" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 texto-container">
+                <p><strong>LAS REINAS DULCES</p></strong>
+                <p>Inma, Liana y Mirella (de izquierda a derecha), enfermeras:  destacan por su dulzura a la hora de prestar cuidados a los mas necesitados.</p>
+            </div>
+        </div>
     </div>
-    <div class="texto-container">
-        <p><strong>LAS REINAS DULCES</p></strong>
-        <p>Inma, Liana y Mirella (de izquierda a derecha), enfermeras:  destacan por su dulzura a la hora de prestar cuidados a los mas necesitados.</p>
-    </div>
+    <!-- Incluye el JS de Bootstrap y sus dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
